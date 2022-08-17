@@ -129,11 +129,12 @@ function consultas(){
 
 }
 
-let consulta= prompt("Desea realizar otra consulta?").toLocaleUpperCase()
+let consulta= prompt("Desea realizar otra consulta?").toLocaleUpperCase();
 
-while (consulta == "SI"){
+while (consulta == "SI" ){
     consultas()
-    let consulta= prompt("Desea realizar otra consulta?").toLocaleUpperCase();
+    consulta= prompt("Desea realizar otra consulta?").toLocaleUpperCase();
+
     
 }
 
