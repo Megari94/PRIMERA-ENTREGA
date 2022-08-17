@@ -100,14 +100,22 @@ dr.push(vier);
 dr.push(vier2);
 
 
-console.table(dr);
+console.table(dr); 
 
 //DOCTOR DISPONIBLE EN CLINICA 
 
-let drDispo = dr.filter(Horarios=>Horarios.especialidad == "Clinico" );
+let drDispo = dr.find(Horarios=>Horarios.especialidad == "Clinico" );
 
-console.log(`Por vacaciones estaremos contando con un solo Medico Clinico`);
-console.table(drDispo);
+console.log(`Por vacaciones estaremos contando con un solo Medico Clinico: ${drDispo.nombre}`);
+
+
+//PERSONAL QUE TRABAJE CON OBRA SOCIAL
+
+let prep = dr.filter(Horarios=>Horarios.prepaga == "SI" );
+
+console.log(`Personal que trabaja con Obra Social`);
+console.table(prep);
+
 
 
 //TABLA DEL PACIENTE
