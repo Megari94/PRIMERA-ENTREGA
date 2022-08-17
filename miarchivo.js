@@ -102,6 +102,13 @@ dr.push(vier2);
 
 console.table(dr);
 
+//DOCTOR DISPONIBLE EN CLINICA 
+
+let drDispo = dr.filter(Horarios=>Horarios.especialidad == "Clinico" );
+
+console.log(`Por vacaciones estaremos contando con un solo Medico Clinico`);
+console.table(drDispo);
+
 
 //TABLA DEL PACIENTE
 
@@ -119,6 +126,8 @@ const turnos=[];
 
 turnos.push(pacientes);
 console.table(turnos);
+
+
 
 //FUNCION PARA LOS DATOS DE LA CLINICA
 
